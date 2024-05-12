@@ -1,0 +1,85 @@
+tech_cultural_heritage = {
+	cost = 0
+	area = society
+	start_tech = yes
+	category = { statecraft }
+	tier = 0
+
+	potential = {
+		OR = {
+			is_hive_empire = no
+			is_memorialist_empire = yes
+		}
+    is_vertex_fully_custom_empire_tech_locked = no
+	}
+
+  starting_potential = {
+    is_vertex_fully_custom_empire = no
+  }
+
+	weight_modifier = {
+
+	}
+
+	ai_weight = {
+
+	}
+}
+
+tech_holo_entertainment = {
+	cost = 0
+	area = society
+	start_tech = yes
+	category = { statecraft }
+	tier = 0
+
+	potential = {
+		is_gestalt = no
+    is_vertex_fully_custom_empire_tech_locked = no
+	}
+
+  starting_potential = {
+    is_vertex_fully_custom_empire = no
+  }
+
+	## unlock holo-theatres building
+}
+
+tech_industrial_farming = {
+	cost = 0
+	area = society
+	tier = 0
+	category = { biology }
+	start_tech = yes
+
+  potential = {
+    is_vertex_fully_custom_empire_tech_locked = no
+	}
+
+  starting_potential = {
+    is_vertex_fully_custom_empire = no
+  }
+
+	# unlocks farming districts
+}
+
+# ##################
+# Basic army
+# ##################
+tech_planetary_defenses = {
+	cost = 0
+	area = society
+	start_tech = yes
+	category = { military_theory }
+	tier = 0
+
+  potential = {
+    is_vertex_fully_custom_empire_tech_locked = no
+	}
+
+  starting_potential = {
+    is_vertex_fully_custom_empire = no
+  }
+
+	## unlock defense army, militia and basic attachments
+}

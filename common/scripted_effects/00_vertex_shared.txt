@@ -1,0 +1,39 @@
+vertex_volitional_machines_setup = {
+  last_created_species = {
+    set_species_flag = vertex_species_automated_robot
+    save_global_event_target_as = global_vertex_species_automated_robots
+
+    set_citizenship_type = {
+      country = root.owner
+      type = citizenship_full_machine
+    }
+
+    set_living_standard = {
+      country = root.owner
+      type = living_standard_hive_mind
+    }
+  }
+}
+
+vertex_benevolent_machines_home_planet_setup = {
+  owner = {
+    give_technology = {
+      tech = tech_eco_simulation
+      message = no
+    }
+    give_technology = {
+      tech = tech_hydroponics
+      message = no
+    }
+  }
+
+  # add necessary pops
+	while = {
+		count = 3
+		create_pop = {
+			species = owner_main_species
+		}
+	}
+
+  add_building = building_vertex_nutrient_fabricator
+}

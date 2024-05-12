@@ -1,0 +1,171 @@
+# Nuclear Missiles
+tech_missiles_1 = {
+	area = engineering
+	tier = 0
+	category = { propulsion }
+	ai_update_type = military
+	start_tech = yes
+
+  potential = {
+    is_vertex_fully_custom_empire_tech_locked = no
+	}
+
+  starting_potential = {
+    is_vertex_fully_custom_empire = no
+  }
+}
+
+tech_flak_batteries_1 = {
+	area = engineering
+	tier = 0
+	category = { propulsion }
+	ai_update_type = military
+	start_tech = yes
+
+  potential = {
+    is_vertex_fully_custom_empire_tech_locked = no
+	}
+
+  starting_potential = {
+    is_vertex_fully_custom_empire = no
+  }
+}
+
+tech_mass_drivers_1 = {
+	area = engineering
+	tier = 0
+	category = { propulsion }
+	ai_update_type = military
+	start_tech = yes
+
+  potential = {
+    is_vertex_fully_custom_empire_tech_locked = no
+	}
+
+  starting_potential = {
+    is_vertex_fully_custom_empire = no
+  }
+}
+
+tech_mechanized_mining = {
+	cost = 0
+	area = engineering
+	start_tech = yes
+	category = { industry }
+	tier = 0
+	icon = "t_space_construction"
+
+  potential = {
+    is_vertex_fully_custom_empire_tech_locked = no
+	}
+
+  starting_potential = {
+    is_vertex_fully_custom_empire = no
+  }
+
+	# unlocks mining districts
+}
+
+tech_basic_industry = {
+	cost = 0
+	area = engineering
+	start_tech = yes
+	category = { industry }
+	tier = 0
+	icon = "t_space_construction"
+
+  potential = {
+    is_vertex_fully_custom_empire_tech_locked = no
+	}
+
+  starting_potential = {
+    is_vertex_fully_custom_empire = no
+  }
+
+	# unlocks basic buildings
+}
+
+# Chemical Thrusters
+tech_thrusters_1 = {
+	area = engineering
+	cost = 0
+	start_tech = yes
+	tier = 0
+	category = { propulsion }
+	ai_update_type = all
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "TECH_UNLOCK_THRUSTER_1_TITLE"
+			desc = "TECH_UNLOCK_THRUSTER_1_DESC"
+		}
+	}
+
+  potential = {
+    is_vertex_fully_custom_empire_tech_locked = no
+	}
+
+  starting_potential = {
+    is_vertex_fully_custom_empire = no
+  }
+}
+
+# tech_ship_armor_1 = {
+# 	cost = @tier1cost1
+# 	area = engineering
+# 	tier = 0
+# 	category = { materials }
+# 	ai_update_type = all
+# 	start_tech = yes
+
+#   potential = {
+#     is_vertex_fully_custom_empire_tech_locked = no
+# 	}
+
+#   starting_potential = {
+#     is_vertex_fully_custom_empire = no
+#   }
+# }
+
+tech_assault_armies = {
+	cost = @tier1cost1
+	area = engineering
+	tier = 0
+	category = { voidcraft }
+	prerequisites = { "tech_planetary_defenses" }
+	start_tech = yes
+
+  potential = {
+    is_vertex_fully_custom_empire_tech_locked = no
+	}
+
+  starting_potential = {
+    is_vertex_fully_custom_empire = no
+  }
+}
+
+tech_space_mining_1 = {
+	cost = @tier1cost1
+	area = engineering
+	tier = 1
+	category = { industry }
+	prerequisites = { "tech_space_construction" }
+	weight = @tier1weight1
+
+  potential = {
+    is_vertex_fully_custom_empire_tech_locked = no
+	}
+
+	modifier = {
+		station_gatherers_produces_mult = 0.10
+	}
+
+	weight_modifier = {
+
+	}
+
+	ai_weight = {
+
+	}
+}

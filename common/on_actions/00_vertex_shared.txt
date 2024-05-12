@@ -1,0 +1,43 @@
+# see Execution order: https://stellaris.paradoxwikis.com/Game_start_modding
+# space by a margin of 5 to allow for new future events
+
+### GALAXY CREATION
+generate_empire_home_planet = {} # 10
+generate_home_system_resources = {} # 20
+
+### EMPIRE INITIALISATION
+# called during empire initialization when starting a new game
+# scope: country
+empire_init_add_technologies = { # 30
+  events = {
+    vertex_shared_events.30
+  }
+}
+
+# Called during empire initialization when starting a new game if has_secondary_species game rule is true.
+# Called before empire_init_create_capital_pops.
+# scope: planet
+# from: founder species
+# fromfrom: secondary species (if exists)
+empire_init_capital_planet = { # 40
+	events = {
+		vertex_shared_events.40 # starting buildings, districts & pops
+		# at this point the species might have changed (because we added traits), so FROMFROM might not be the secondary species anymore
+	}
+}
+
+empire_init_create_ships = {} # 50
+
+### SPECIAL INITIALISERS
+on_initialize_advanced_colony = {} # 60
+on_become_advanced_empire = {} # 70
+
+### GAME START
+on_game_start = { # 80
+  events = {
+    vertex_shared_events.80
+  }
+}
+
+on_game_start_country = {} # 90
+on_game_press_begin = {} # 100

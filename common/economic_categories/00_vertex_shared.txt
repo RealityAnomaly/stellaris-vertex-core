@@ -1,0 +1,28 @@
+pop_category_vertex_dependent = {
+	parent = planet_pops
+	generate_add_modifiers = {
+		upkeep
+	}
+	modifier_category = pop
+}
+
+planet_vertex_dependents = {
+	parent = planet_culture_workers
+	generate_mult_modifiers = {
+		produces
+	}
+	modifier_category = pop
+}
+
+pop_category_simple_drones = {
+	parent = planet_pops
+}
+
+pop_category_complex_drones = {
+	parent = planet_pops
+	generate_add_modifiers = {
+		upkeep
+		produces
+	}
+	modifier_category = pop
+}

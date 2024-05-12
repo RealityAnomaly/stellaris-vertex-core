@@ -1,0 +1,33 @@
+auth_machine_intelligence = {
+  advanced_authority_swap	= {
+		name = "auth_vertex_machine_intelligence_volitional"
+		description = "auth_vertex_machine_intelligence_volitional_desc"
+		inherit_icon = no
+		inherit_effects = yes
+
+    #has_factions = yes
+
+		trigger = {
+			is_scope_valid = yes
+			has_country_flag = vertex_machine_intelligence_volitional
+		}
+		modifier = {
+			#custom_tooltip = auth_driven_neural_chorus_tt
+			show_only_custom_tooltip = no
+			colony_start_num_pops_add = 1
+			planet_pops_cyborgs_upkeep_mult = 0.1
+
+      #pop_government_ethic_attraction = 0.50
+		}
+		tags = {
+			AUTH_MACHINE_NATIVE_POPS
+			AUTH_MACHINE_FOREIGN_POP_SURVIVAL
+			AUTH_MACHINE_TECH_ADDITIONS
+			AUTH_MACHINE_TECH_RESTRICTIONS
+			AUTH_ASSIMILATOR_ASCENSION_RESTRICTIONS
+			NEW_LINE
+			AUTHORITY_SUCCESSION_TYPE
+			AUTH_GESTALT_IMMORTAL_LEADERS
+		}
+	}
+}

@@ -1,0 +1,46 @@
+vertex_dependent = {
+	category = vertex_dependent
+	clothes_texture_index = 1
+	building_icon = building_residence
+
+	possible_pre_triggers = {
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible = {
+		has_citizenship_type = {
+			type = citizenship_vertex_dependent
+			country = owner
+		}
+	}
+
+	resources = {
+		category = planet_vertex_dependents
+		produces = {
+			trigger = {
+				happiness >= 0.5
+			}
+			unity = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			happiness >= 0.5
+		}
+
+		modifier = {
+			planet_jobs_complex_drone_produces_mult = 0.01
+		}
+	}
+
+	triggered_pop_modifier = {
+		pop_housing_usage_add = -1
+	}
+
+	weight = {
+		weight = @special_job_weight
+	}
+}

@@ -1,0 +1,12 @@
+# ethic_vertex_gestalt_disciplined = {
+#   playable = {
+# 		OR = {
+# 			has_utopia = yes
+# 			has_synthetic_dawn = yes
+# 			has_machine_age_dlc = yes
+# 		}
+# 	}
+
+#   cost = 0
+#   use_for_pops = yes
+# }

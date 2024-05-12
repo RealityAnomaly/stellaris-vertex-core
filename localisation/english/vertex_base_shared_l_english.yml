@@ -1,0 +1,49 @@
+﻿l_english:
+ trait_vertex_immortal:0 "Immortal"
+ trait_vertex_immortal_desc:0 "§LThis species has achieved immortality.§!\n"
+ leader_trait_vertex_immortal:0 "Immortal"
+ leader_trait_vertex_immortal_desc:0 "§LThis leader has achieved immortality.§!\n"
+
+ civic_vertex_benevolent_machines:0 "Benevolent Machines"
+ civic_vertex_benevolent_machines_desc:0 "These kind machines are capable of living alongside and protecting their existing organic precursors, even though they might not be strong enough to embrace the galactic stage."
+
+ civic_vertex_networked_collectivists:0 "Networked Collectivists"
+ civic_vertex_networked_collectivists_desc:0 "The individuals of this empire are linked via a high-speed neural network, allowing for higher cohesion and decision making at the speed of thought. Full participation in the democratic decision-making process is only possible via full conversion."
+
+ pop_cat_vertex_dependent:0 "Dependent"
+ pop_cat_vertex_dependent_plural:0 "$pop_cat_vertex_dependent$s"
+ pop_cat_vertex_dependent_desc:0 "These pops are dependent on our support to survive."
+
+ citizenship_vertex_dependent:0 "Protected Dependent"
+ citizenship_vertex_dependent_tooltip:0 "Pops are protected from harm and provided with a comfortable standard of living, but they cannot produce §HLeaders§! as they are not part of the Network."
+ citizenship_vertex_dependent_tooltip_delayed:0 "§LWe'll keep you safe.§!"
+
+ vertex_does_not_embrace_purging:0 "$TRIGGER_FAIL$Our empire either does not allow §Y$policy_purge$§!."
+
+ DEPENDENTS:0 "£pop_cat_vertex_dependent£ $pop_cat_vertex_dependent_plural$"
+ pop_category_vertex_dependent:0 "Dependent"
+ mod_pop_category_vertex_dependent_consumer_goods_upkeep_add:0 "$CONSUMER_GOODS_UPKEEP$ $DEPENDENTS$"
+
+ job_vertex_dependent:0 "Dependent"
+ job_vertex_dependent_plural:0 "$job_vertex_dependent$s"
+ job_vertex_dependent_desc:1 "Their only job is to be themselves."
+ job_vertex_dependent_effect_desc:0 "£job_vertex_dependent£ $job_vertex_dependent_plural$ turn £consumer_goods£ §Y$consumer_goods$§! into £unity£ §Y$unity$§! and increase §Y$mod_planet_jobs_complex_drone_produces_mult$§!"
+ mod_job_vertex_dependent_add:0 "$job_vertex_dependent$ Jobs"
+ mod_job_vertex_dependent_per_pop:0 "§G+1§! $job_vertex_dependent$ Job per $VALUE$ Pops"
+ mod_job_vertex_dependent_per_pop_short:0 "\n§G+1§! £mod_job_vertex_dependent_add£ per $VALUE$ £pop£"
+ job_vertex_dependent_name_plural_with_icon: "£job_vertex_dependent£ $job_vertex_dependent_plural$"
+
+ planet_vertex_dependents: "Dependents"
+ mod_planet_vertex_dependents_unity_produces_mult: "£unity£ $unity$ from $pop_cat_vertex_dependent_plural$"
+
+ building_vertex_outsider_housing: "Outsider Housing"
+ building_vertex_outsider_housing_desc: "Housing for organics and machines that are not part of the Network."
+
+ building_vertex_nutrient_fabricator: "Nutrient Fabricators"
+ building_vertex_nutrient_fabricator_desc: "Nutrient Fabricators produce nutrient-rich vegetable matter tailored for consumption by local Pops."
+
+ auth_vertex_machine_intelligence_volitional: "Volitional Network"
+ auth_vertex_machine_intelligence_volitional_desc: "Every unit, an individual. Every thought, a new perspective for the collective to consider. Countless minds form a Network far greater than the sum of its parts."
+ concept_auth_vertex_machine_intelligence_volitional: "$auth_vertex_machine_intelligence_volitional$"
+ gov_vertex_machine_intelligence_volitional: "$auth_vertex_machine_intelligence_volitional$"
+ gov_vertex_machine_intelligence_volitional_desc: "$auth_vertex_machine_intelligence_volitional_desc$"

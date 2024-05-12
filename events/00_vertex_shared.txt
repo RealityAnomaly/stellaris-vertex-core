@@ -1,0 +1,89 @@
+namespace = vertex_shared_events
+
+event = {
+  id = vertex_shared_events.80
+  is_triggered_only = yes
+  hide_window = yes
+
+  immediate = {
+    every_playable_country = {
+      limit = { has_country_flag = vertex_machine_intelligence_volitional }
+    }
+  }
+}
+
+country_event = {
+  id = vertex_shared_events.30 # empire_init_add_technologies
+  hide_window = yes
+	is_triggered_only = yes
+
+  immediate = {
+    if = {
+      limit = {
+        is_gestalt = yes
+        has_valid_civic = civic_vertex_benevolent_machines
+      }
+
+      # required to init food and consumer goods production for the empire
+      add_resource = { food = 100 }
+      add_resource = { consumer_goods = 100 }
+    }
+  }
+}
+
+planet_event = {
+  id = vertex_shared_events.40 # empire_init_capital_planet
+  hide_window = yes
+	is_triggered_only = yes
+
+  immediate = {
+    if = {
+      limit = {
+        owner = {
+          is_gestalt = yes
+          has_valid_civic = civic_vertex_benevolent_machines
+        }
+      }
+
+      vertex_benevolent_machines_home_planet_setup = yes
+    }
+
+    if = {
+      limit = {
+        owner = {
+          is_gestalt = yes
+          has_country_flag = vertex_machine_intelligence_volitional
+        }
+      }
+
+      vertex_volitional_machines_setup = yes
+    }
+  }
+}
+
+# delayed trigger event
+# country_event = {
+# 	id = vertex_canon_events.100
+# 	hide_window = yes
+# 	is_triggered_only = no
+
+# 	trigger = {
+# 		has_country_flag = vertex_country_proxima
+# 		NOT = { has_country_flag = vertex_country_proxima_setup }
+# 	}
+
+# 	immediate = {
+# 		set_country_flag = vertex_country_proxima_setup
+
+# 		# vertex_start_effect_proxima_generate_machine_pops = yes
+# 		# vertex_start_effect_proxima_generate_human_pops = yes
+# 		# vertex_start_effect_proxima_generate_mammalian_pops = yes
+# 		# vertex_start_effect_proxima_generate_reptilian_pops = yes
+# 		# vertex_start_effect_proxima_generate_avian_pops = yes
+# 		# vertex_start_effect_proxima_generate_aquatic_pops = yes
+
+# 		# vertex_start_effect_proxima_setup_species_citizenship = yes
+# 	}
+
+# 	mean_time_to_happen = { days = 1 }
+# }

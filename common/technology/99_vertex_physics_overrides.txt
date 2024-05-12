@@ -1,0 +1,168 @@
+# tech_fission_power = {
+# 	area = physics
+# 	cost = 0
+# 	tier = 0
+# 	start_tech = yes
+# 	category = { particles }
+# 	ai_update_type = all
+
+# 	prereqfor_desc = {
+# 		hide_prereq_for_desc = component
+# 		custom = {
+# 			title = "TECH_UNLOCK_FISSION_POWER_TITLE"
+# 			desc = "TECH_UNLOCK_FISSION_POWER_DESC"
+# 		}
+# 	}
+
+# 	potential = {
+#     is_vertex_fully_custom_empire_tech_locked = no
+# 	}
+
+# 	starting_potential = {
+#     is_vertex_fully_custom_empire = no
+#   }
+# }
+
+# tech_reactor_boosters_1 = {
+# 	area = physics
+# 	cost = 0
+# 	tier = 0
+# 	start_tech = yes
+# 	category = { particles }
+# 	ai_update_type = military
+# 	prerequisites = { "tech_fission_power" }
+
+# 	potential = {
+#     is_vertex_fully_custom_empire_tech_locked = no
+# 	}
+
+# 	starting_potential = {
+#     is_vertex_fully_custom_empire = no
+#   }
+# }
+
+# tech_shields_1 = {
+# 	area = physics
+# 	cost = 0
+# 	tier = 0
+# 	category = { field_manipulation }
+# 	ai_update_type = all
+# 	start_tech = yes
+
+# 	potential = {
+#     is_vertex_fully_custom_empire_tech_locked = no
+# 	}
+
+# 	starting_potential = {
+#     is_vertex_fully_custom_empire = no
+#   }
+# }
+
+tech_lasers_1 = {
+	area = physics
+	tier = 0
+	category = { particles }
+	ai_update_type = military
+	start_tech = yes
+
+	potential = {
+    is_vertex_fully_custom_empire_tech_locked = no
+	}
+
+	starting_potential = {
+    is_vertex_fully_custom_empire = no
+  }
+}
+
+# tech_pd_tracking_1 = {
+# 	area = physics
+# 	tier = 0
+# 	category = { computing }
+# 	ai_update_type = military
+# 	start_tech = yes
+
+# 	potential = {
+#     is_vertex_fully_custom_empire_tech_locked = no
+# 	}
+
+# 	starting_potential = {
+#     is_vertex_fully_custom_empire = no
+#   }
+# }
+
+# tech_power_plant_1 = {
+# 	cost = 0
+# 	area = physics
+# 	tier = 0
+# 	category = { field_manipulation }
+# 	start_tech = yes
+
+# 	potential = {
+#     is_vertex_fully_custom_empire_tech_locked = no
+# 	}
+
+# 	starting_potential = {
+#     is_vertex_fully_custom_empire = no
+#   }
+# }
+
+tech_hyper_drive_1 = {
+	cost = @tier0cost3
+	area = physics
+	tier = 0
+	category = { particles }
+	start_tech = yes
+
+	is_reverse_engineerable = no
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "TECH_UNLOCK_HYPERDRIVE_1_TITLE"
+			desc = "TECH_UNLOCK_HYPERDRIVE_1_DESC"
+		}
+	}
+
+	weight_modifier = {
+		factor = 1000
+	}
+
+	ai_weight = {
+		weight = 10000
+	}
+
+	potential = {
+    is_vertex_fully_custom_empire_tech_locked = no
+	}
+
+	starting_potential = {
+		is_eager_explorer_empire = no
+		is_vertex_fully_custom_empire = no
+	}
+}
+
+tech_basic_science_lab_1 = {
+	cost = @tier0cost1
+	area = physics
+	tier = 0
+	category = { computing }
+	start_tech = yes
+
+	# # unlock basic science lab lvl 1
+	weight_modifier = {
+		factor = 1000
+	}
+
+	ai_weight = {
+		weight = 10000
+	}
+
+	potential = {
+    is_vertex_fully_custom_empire_tech_locked = no
+	}
+
+	starting_potential = {
+		is_low_tech_start = no # So Broken Shackles origin players don't start with it
+		is_vertex_fully_custom_empire = no
+	}
+}

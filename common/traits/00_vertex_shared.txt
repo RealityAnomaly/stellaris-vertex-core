@@ -1,0 +1,49 @@
+trait_vertex_immortal = {
+  cost = 1
+  initial = yes
+	randomized = no
+
+  inline_script = {
+    script = trait/icon
+    CLASS = leader
+    ICON = "GFX_leader_trait_enclave_trader"
+    RARITY = common
+    COUNCIL = no
+    TIER = none
+  }
+
+  allowed_archetypes = { ROBOT MACHINE }
+  species_potential_add = {
+		exists = from
+		from = { has_country_flag = vertex_country_proxima }
+	}
+}
+
+leader_trait_vertex_immortal = {
+  cost = 1
+  initial = yes
+	randomized = no
+
+  inline_script = {
+    script = trait/icon
+    CLASS = leader
+    ICON = "GFX_leader_trait_enclave_trader"
+    RARITY = common
+    COUNCIL = triggered
+    TIER = none
+  }
+
+  councilor_modifier = {
+    planet_stability_add = 0.1
+  }
+
+  allowed_archetypes = { ROBOT MACHINE }
+	species_potential_add = {
+		exists = from
+		from = { has_country_flag = vertex_country_proxima }
+	}
+
+	leader_class = { commander scientist official }
+  starting_ruler_trait = yes
+  immortal_leaders = yes
+}

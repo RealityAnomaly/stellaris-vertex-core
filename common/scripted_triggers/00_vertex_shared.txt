@@ -1,0 +1,7 @@
+is_vertex_fully_custom_empire = {
+  has_country_flag = vertex_is_fully_custom_empire
+}
+
+is_vertex_fully_custom_empire_tech_locked = {
+  has_country_flag = vertex_is_fully_custom_empire_tech_locked
+}
